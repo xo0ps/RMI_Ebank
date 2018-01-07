@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/ebankingback</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">hackeranme</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <property name="bytecode.use_reflection_optimizer">true</property>
+        <mapping resource="com/iau/sadeghi/ebanking/model/to/AdminsInfo.hbm.xml"/>
+        <mapping resource="com/iau/sadeghi/ebanking/model/to/CurrentAcountType.hbm.xml"/>
+        <mapping resource="com/iau/sadeghi/ebanking/model/to/CustomersEssentialInfo.hbm.xml"/>
+        <mapping resource="com/iau/sadeghi/ebanking/model/to/CustomersExtraInfo.hbm.xml"/>
+        <mapping resource="com/iau/sadeghi/ebanking/model/to/CustomersTransactions.hbm.xml"/>
+        <mapping resource="com/iau/sadeghi/ebanking/model/to/EmployeesInfo.hbm.xml"/>
+        <mapping resource="com/iau/sadeghi/ebanking/model/to/LongProfitableAccountType.hbm.xml"/>
+        <mapping resource="com/iau/sadeghi/ebanking/model/to/NonProfitableAccountType.hbm.xml"/>
+        <mapping resource="com/iau/sadeghi/ebanking/model/to/ShortProfitableAccountType.hbm.xml"/>
+        <mapping resource="com/iau/sadeghi/ebanking/model/to/UsersAuthentication.hbm.xml"/>
+        <mapping resource="com/iau/sadeghi/ebanking/model/to/UsersLevels.hbm.xml"/>
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>

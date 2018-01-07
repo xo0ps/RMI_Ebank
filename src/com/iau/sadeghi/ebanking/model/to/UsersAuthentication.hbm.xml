@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.iau.sadeghi.ebanking.model.to.UsersAuthentication" table="usersauthentication" schema=""
+           catalog="ebanking">
+        <composite-id mapped="true" class="com.iau.sadeghi.ebanking.model.to.UsersAuthenticationPK">
+            <key-property name="row" column="Row"/>
+            <key-property name="id" column="ID"/>
+        </composite-id>
+        <property name="username" column="Username"/>
+        <property name="password" column="Password"/>
+    </class>
+</hibernate-mapping>

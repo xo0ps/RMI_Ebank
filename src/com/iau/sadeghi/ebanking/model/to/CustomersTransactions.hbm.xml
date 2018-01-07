@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.iau.sadeghi.ebanking.model.to.CustomersTransactions" table="customerstransactions" schema=""
+           catalog="ebanking">
+        <composite-id mapped="true" class="com.iau.sadeghi.ebanking.model.to.CustomersTransactionsPK">
+            <key-property name="row" column="Row"/>
+            <key-property name="id" column="ID"/>
+        </composite-id>
+        <property name="t1" column="T1"/>
+        <property name="t2" column="T2"/>
+        <property name="t3" column="T3"/>
+        <property name="t4" column="T4"/>
+        <property name="t5" column="T5"/>
+        <property name="turn" column="Turn"/>
+    </class>
+</hibernate-mapping>
